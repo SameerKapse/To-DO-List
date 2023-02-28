@@ -1,0 +1,88 @@
+body{
+  background-color: #000000;
+}
+.name1{
+    color: #fff;
+    padding: 5px;
+    font-size: 25px;
+    text-align:  center;
+   font-family: Cursive;
+}
+.App{   
+    background-color: #151D3B;
+    min-height: 500px;
+    width: 400px;
+    margin: 100px auto;
+    border-radius: 30px;
+}
+#to-do-form input{
+   
+    text-align: center;
+    background-color: #BAD7E9;
+    width: 200px;
+    height: 50px;
+    border: 0;
+    padding: 0 20px;
+    margin: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    color: #181823;
+}
+#to-do-form input ::placeholder{
+   color: rgb(255, 255,255);    
+}
+#to-do-form input :form{
+    outline: none;
+}
+#to-do-form button{
+   height: 50px;
+    width: 80px;
+    border: none;
+    color: #ffffff;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 300%;
+    border-radius: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 1;
+    cursor: pointer;
+}
+#to-do-form button:hover {
+    animation: animation 8s linear infinite;
+    border: none;
+  }
+  @keyframes animation {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  }
+   #to-do-form  button:before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    right: 150px;
+    bottom: 50px;
+    z-index: -1; 
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
+  } 
+  #to-do-form  button:hover::before {
+    filter: blur(20px);
+  }
+.list p input{
+     background-color: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+} 
+.list p input:focus{
+    outline: none;
+}
